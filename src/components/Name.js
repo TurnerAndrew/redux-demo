@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import { connect } from 'react-redux'
-import { addAge } from '../redux/reducer';
+import { addName } from '../redux/reducer';
 
 const Name = (props) => { 
+
+  console.log(props)
 
   const [name, setName] = useState('')
 
@@ -24,4 +26,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, {addAge})(Name)
+export default connect(mapStateToProps, { addName })(Name)
