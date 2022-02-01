@@ -7,7 +7,7 @@ const Details = (props) => {
 
   return (
     <div>
-        <h1>{props.name}</h1>
+        <h1>{name}</h1>
     </div>
     )
 };
