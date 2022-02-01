@@ -4,8 +4,6 @@ import { addName } from '../redux/reducer';
 
 const Name = (props) => { 
 
-  console.log(props)
-
   const [name, setName] = useState('')
 
   const addName = () => {
@@ -22,7 +20,7 @@ const Name = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    age: state.age,
+    name: state.name
   }
 }
 
