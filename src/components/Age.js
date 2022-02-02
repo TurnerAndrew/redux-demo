@@ -2,9 +2,10 @@ import React from 'react';
 
 const Age = () => {
   return (
-    <div>
-        <h1>Enter your age:</h1><input type='text'></input>
-        <button>Save</button>
+    <div className={'form-div'}>
+        <h1 className={'label'}>Enter your age:</h1>
+        <input type='text' className='input'></input>
+        <button className={'save'}>Save</button>
     </div>
     )
 };
