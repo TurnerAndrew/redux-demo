@@ -11,9 +11,10 @@ const Age = (props) => {
     }
 
   return (
-    <div>
-        <h1>Enter your age:</h1><input type='text' onChange={e => setAge(e.target.value)}></input>
-        <button onClick={addAge}>Save</button>
+    <div className={'form-div'}>
+        <h1 className={'label'}>Enter your age:</h1>
+        <input type='text' className='input'></input>
+        <button className={'save'}>Save</button>
     </div>
     )
 };

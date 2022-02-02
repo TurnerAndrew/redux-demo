@@ -6,11 +6,15 @@ import Details from './components/Details'
 
 function App() {
   return (
-    <div>
-      <Name/>
-      <Age/>
-      <Location/>
-      <Details/>        
+    <div id='main'>
+      <div id='input-container' className='main-container'>
+        <Name/>
+        <Age/>
+        <Location/>
+      </div>
+      <div id='details-container' className='main-container'>
+        <Details/>
+      </div>
     </div>
   );
 }
