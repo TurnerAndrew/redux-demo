@@ -1,15 +1,14 @@
 import React from 'react';
 
-const Main = () => {
-
-  
+const Name = () => {  
 
   return (
-    <div>
-        <h1>Enter your name:<input type='text'></input></h1>
-        <button>Save</button>
-    </div>
-)
+      <div className={'form-div'}>
+          <h1 className={'label'}>Enter your name:</h1>
+          <input type='text' className={'input'}></input>
+          <button className={'save'}>Save</button>
+      </div>
+    )
 };
 
-export default Main;
+export default Name;

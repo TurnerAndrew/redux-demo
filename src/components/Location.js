@@ -2,9 +2,10 @@ import React from 'react';
 
 const Location = () => {
   return (
-    <div>
-        <h1>Enter your location:<input type='text'></input></h1>
-        <button>Save</button>
+    <div className={'form-div'}>
+        <h1 className={'label'}>Enter your location:</h1>
+        <input type='text' className='input'></input>
+        <button className={'save'}>Save</button>
     </div>
     )
 };
