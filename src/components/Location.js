@@ -13,8 +13,8 @@ const Location = (props) => {
   return (
     <div className={'form-div'}>
         <h1 className={'label'}>Enter your location:</h1>
-        <input type='text' className='input'></input>
-        <button className={'save'}>Save</button>
+        <input type='text' className='input' onChange={e => setLocation(e.target.value)}></input>
+        <button className={'save'} onClick={addLocation}>Save</button>
     </div>
     )
 };

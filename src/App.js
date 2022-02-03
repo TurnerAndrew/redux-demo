@@ -8,7 +8,7 @@ function App() {
   return (
     <div id='main'>
       <div id='input-container' className='main-container'>
-        <Name/>
+        <Name />
         <Age/>
         <Location/>
       </div>
