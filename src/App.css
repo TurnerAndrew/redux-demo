@@ -21,6 +21,7 @@
 
 .form-div {
   width: 85%;
+  height: 25%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -45,3 +46,20 @@
   color: #004966;
 }
 
+.details{
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-info {
+  color: #f0eff4;
+  font-size: large;
+}
+
+.form-container{
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: baseline;
+  height: 200%;
+}
