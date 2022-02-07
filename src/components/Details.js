@@ -1,9 +1,11 @@
 import React from 'react';
-import { useSelector } from 'react-redux'
+import { connect } from 'react-redux'
 
-const Details = () => {
+const Details = (props) => {
 
-  const { name, age, location } = useSelector(store => store)
+  console.log(props)
+
+  const { name, age, location } = props
 
   return (
     <div className={'form-div details'}>
@@ -14,4 +16,10 @@ const Details = () => {
     )
 };
 
-export default Details;
+const mapStateToProps = (state) => {
+  return {
+    ...state
+  }
+}
+
+export default connect(mapStateToProps)(Details);

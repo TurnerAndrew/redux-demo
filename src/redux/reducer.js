@@ -32,12 +32,15 @@ export const addLocation = (location) => {
 const reducer = (state = initialState, action) => {
     switch(action.type){
         case ADD_NAME:
+            console.log(action)
             const name = action.payload
             return{...state, name: name}
         case ADD_AGE:
+            console.log(action)
             const age = action.payload
             return {...state, age: age}
         case ADD_LOCATION:
+            console.log(action)
             const location = action.payload
             return {...state, location: location}            
         default:

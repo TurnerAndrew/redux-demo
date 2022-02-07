@@ -20,7 +20,7 @@ const Age = (props) => {
 };
 
 const mapStateToProps = (state) => {
-    console.log('mapped')
+    console.log(state)
     return {
         age: state.age
     }
